@@ -1,0 +1,261 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fffaf3;
+    color: #333;
+}
+
+/* Navigation Bar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #25140e;
+    color: white;
+}
+
+.logo {
+    color: #ffb347;
+    font-size: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffb347;
+}
+
+/* Hero Section */
+.hero {
+    height: 500px;
+    background: linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)
+    ),
+    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1400");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff7b00;
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #d95d00;
+}
+
+/* Menu Section */
+.menu {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.menu h2,
+.reviews h2,
+.contact h2 {
+    font-size: 32px;
+    color: #a83f00;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    margin-bottom: 35px;
+    color: #777;
+}
+
+.food-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.food-card {
+    background: white;
+    width: 280px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    transition: transform 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-10px);
+}
+
+.food-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.food-card h3 {
+    margin: 15px 0 8px;
+}
+
+.food-card p {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.food-card h4 {
+    color: #e65c00;
+    font-size: 20px;
+}
+
+/* Offers Section */
+.offers {
+    background-color: #ffedd5;
+    padding: 55px 20px;
+    text-align: center;
+}
+
+.offers h2 {
+    color: #a83f00;
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+
+.offer-box {
+    background-color: #fff;
+    max-width: 450px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.offer-box h3 {
+    font-size: 38px;
+    color: #ff6500;
+    margin-bottom: 15px;
+}
+
+.offer-box p {
+    margin: 10px 0;
+}
+
+/* Reviews Section */
+.reviews {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.review-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.review-card {
+    background-color: white;
+    padding: 25px;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.review-card h3 {
+    color: #d45a00;
+    margin-bottom: 15px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #25140e;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #ffb347;
+    margin-bottom: 25px;
+}
+
+.contact p {
+    margin: 12px 0;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background-color: #140b07;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .hero-content h2 {
+        font-size: 30px;
+    }
+
+    .food-container,
+    .review-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
